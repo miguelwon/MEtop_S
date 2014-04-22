@@ -1,0 +1,65 @@
+#############
+Mu 0.32
+Md 0.32
+Mc 1.55
+Ms 0.5
+Mb 4.95
+Mtop 172.5
+MZ 91.1876
+MW 80.399
+MH 120
+Me 0.000511
+Mm 0.1057
+Mt 1.777
+wW 2.085
+wtop 1.32
+wH 0.005753
+wZ 2.4952
+SW 0.480791
+EE 0.3133
+s12 0.221
+s23 0.040
+s13 0.0035
+co1 0.01
+co2 0.01
+fu  0.707
+hu  0.707
+fc  0.707
+hc  0.707
+Q 172.5
+miuR 172.5
+L 1000
+ECM 7000
+##### PTcut for matching PT 
+PTmatch 10
+##### PTmin for cut in PT
+PTmin 10
+#####
+NEvnts 10000
+############## 
+## parton distribution functions (PDF name according to PDFindex of LHAPDF) (each time you change this flag you have to run install.py)
+pdf cteq6ll.LHpdf
+## collider information (pp=1 for proton-proton or pp=-1 for proton-protonbar)
+pp 1
+#### W decay mode (e,m,t,u,c)
+DecMod 11111
+#### Spin Correlations (0-off,1-on)
+SpCorr 1
+#### t,tbar or both (0- t only,1- tbar only,2- t and tbar)
+ttbar 2
+#### SEED (from 0 to 30081)
+seed 1002
+#############
+##whether to calculate total cross section and generate:
+## 0 cross section only
+## 1 event generation  only (cs must have been calulated previously)
+## 2 cs and event generation
+cs 2
+#############
+## Set which process calculate
+## Process 1: LO Direct top only
+## Process 2: "top + gluon" only
+## Process 3: "top + light quark" only
+## Process 21: NLO Direct top only
+## Process 22: NLO Direct top + "top+light quark"
+Process 3
